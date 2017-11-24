@@ -21,4 +21,4 @@ I am using the kaggle's mushrooms dataset (from [here](https://www.kaggle.com/uc
 
 ## Scripts
 
-The jupyter notebook [script.ipynb](src/script.ipynb) loads mushrooms.csv using the `pandas` package and display information about the data frame.  
+The jupyter notebook [main_script.ipynb](src/main_script.ipynb) loads mushrooms.csv using the `pandas` package and display information about the data frame.  
