@@ -18,3 +18,7 @@ I am using the kaggle's mushrooms dataset (from [here](https://www.kaggle.com/uc
 - stalk-color,  
 - spore-print-color,  
 - habitat.  
+
+## Scripts
+
+The jupyter notebook [script.ipynb](src/script.ipynb) loads mushrooms.csv using the `pandas` package and display information about the data frame.  
