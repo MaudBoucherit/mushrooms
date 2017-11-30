@@ -4,6 +4,12 @@ This project's goal is to predict rather a mushroom is poisonous, given some inf
 Author: Maud Boucherit   
 Released on 2017-11-23    
 
+
+During my free time, I enjoy getting lost in the woods. Usually, I can find my way back, but I'm afraid one day I might be lost for good. Identifying non-poisonous mushroom seems like a vital skill. Therefore, can I predict if a mushroom is poisonous based on some of its features?    
+
+I will build a decision tree. I want to minimalize the false negative (i.e. minimalize saying a mushroom is not poisonous when it is) so the probability of getting a false negative will be my main score function.
+
+
 ## Data
 
 Stored [here](data/mushrooms.csv), added on 2017-11-23   
