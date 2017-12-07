@@ -1,8 +1,16 @@
 # Mushrooms Project - Source
 This folder contains the scripts for the Mushrooms Project.
 
-## Script
+## Main Script
 Released on 2017-11-23   
 Last update on 2017-11-23   
 
 [script.ipynb](script.ipynb) is a Jupyter notebook loading mushrooms.csv using the `pandas` package. It also display its 5th first rows and information about the data frame.  
+
+## Clean data
+Released on 2017-12-07   
+Last update on 2017-12-07   
+
+[clean_data.R](clean_data.R) is a R script that cleans the data. It mainly changes the levels of the variables (the levels are one letter only in the raw data).  
+
+**usage:** `Rscript src/clean_data.R data/mushrooms.csv results/clean_mushrooms.csv`
