@@ -24,3 +24,12 @@ Last update on 2017-12-07
 [descr_stat.R](descr_stat.R) is a R script that does some description of the clean data. It computes some descriptive statistics and two-dimension plots.
 
 **usage:** `Rscript src/descr_stat.R results/clean_mushrooms.csv`
+
+
+## Modelling - Decision tree
+Released on 2017-12-07   
+Last update on 2017-12-07   
+
+[decision_tree.py](decision_tree.py) is a Python script that build a decision tree to the data and produce the associate visualization.
+
+**usage:** `python src/decision_tree.py results/clean_mushrooms.csv`
