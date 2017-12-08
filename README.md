@@ -27,4 +27,11 @@ I am using the kaggle's mushrooms dataset (from [here](https://www.kaggle.com/uc
 
 ## Scripts
 
-The jupyter notebook [main_script.ipynb](src/main_script.ipynb) loads mushrooms.csv using the `pandas` package and display information about the data frame.  
+- Clean the data: [clean_data.R](clean_data.R)    
+**usage:** `Rscript src/clean_data.R data/mushrooms.csv results/clean_mushrooms.csv`   
+
+- Describe the data: [descr_stat.R](descr_stat.R)    
+**usage:** `Rscript src/descr_stat.R results/clean_mushrooms.csv`   
+
+- Fit a decision tree on the data: [decision_tree.py](decision_tree.py)    
+**usage:** `python src/decision_tree.py results/clean_mushrooms.csv`
