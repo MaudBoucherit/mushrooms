@@ -13,17 +13,21 @@ Last update on 2017-12-08
 
 ## Data description
 Released on 2017-12-07   
-Last update on 2017-12-08   
+Last update on 2017-12-09   
 
-[descr_stat.R](descr_stat.R) is a R script that does some description of the clean data. It create and save bar plots, one for each explanatory variable.
+[descr_stat.R](descr_stat.R) is a R script that does some description of the clean data. It creates and saves bar plots, one for each explanatory variable.
 
 **usage:** `Rscript src/descr_stat.R results/clean_mushrooms.csv`
 
 
 ## Modelling - Decision tree
 Released on 2017-12-07   
-Last update on 2017-12-07   
+Last update on 2017-12-09   
 
-[decision_tree.py](decision_tree.py) is a Python script that build a decision tree to the data and produce the associate visualization.
+[decision_tree.py](decision_tree.py) is a Python script that build a decision tree to the data and produce the associate visualization.   
+1. load the data and split it into training and test sets   
+2. build a decision tree fitting the training set   
+3. plot the decision tree and save as png   
+4. calculate prediction rates and save as csv   
 
-**usage:** `python src/decision_tree.py results/clean_mushrooms.csv`
+**usage:** `Rscript src/decision_tree.R results/clean_mushrooms.csv results/predictions.csv results/tree.png`
