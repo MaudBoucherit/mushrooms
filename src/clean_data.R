@@ -34,7 +34,7 @@ main <- function(){
            spore_color = `spore-print-color`) %>% 
     select(class, cap_shape, cap_color, odor, 
            gill_spacing, gill_size, gill_color, 
-           stalk_color, spore_color, habitat)
+           stalk_color, spore_color)
   
   # change labels of class
   data <- data %>% 
@@ -125,16 +125,6 @@ main <- function(){
            spore_color = replace(spore_color, spore_color == "u", "purple"),
            spore_color = replace(spore_color, spore_color == "w", "white"),
            spore_color = replace(spore_color, spore_color == "y", "yellow"))
-  
-  # change labels of habitat
-  data <- data %>% 
-    mutate(habitat = replace(habitat, habitat == "g", "grasses"),
-           habitat = replace(habitat, habitat == "l", "leaves"),
-           habitat = replace(habitat, habitat == "m", "meadows"),
-           habitat = replace(habitat, habitat == "p", "paths"),
-           habitat = replace(habitat, habitat == "u", "urban"),
-           habitat = replace(habitat, habitat == "w", "waste"),
-           habitat = replace(habitat, habitat == "d", "woods"))
   
   # save the clean data set
   write_csv(data, out_file)
