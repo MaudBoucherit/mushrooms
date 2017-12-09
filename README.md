@@ -2,8 +2,8 @@
 This project's goal is to predict rather a mushroom is poisonous, given some information about the mushroom outlook.
 
 Author: Maud Boucherit   
-Released on 2017-11-23 
-Last update: 2017-12-08
+Released on 2017-11-23   
+Last update: 2017-12-09
 
 
 During my free time, I enjoy getting lost in the woods. Usually, I can find my way back, but I'm afraid one day I might be lost for good. Identifying non-poisonous mushroom seems like a vital skill. Therefore, can I predict if a mushroom is poisonous based on some of its features?    
@@ -11,7 +11,7 @@ During my free time, I enjoy getting lost in the woods. Usually, I can find my w
 I will build a decision tree. I want to minimalize the false negative (i.e. minimalize saying a mushroom is not poisonous when it is) so the probability of getting a false negative will be my main score function.
 
 
-## Data
+## Data ([data](data/))
 
 Stored [here](data/mushrooms.csv), added on 2017-11-23   
 
@@ -23,9 +23,11 @@ I am using the kaggle's mushrooms dataset (from [here](https://www.kaggle.com/uc
 - gill-size,  
 - gill-color,  
 - stalk-color,  
-- spore-print-color.
+- spore-print-color.   
 
-## Scripts
+If you want more information about the raw data, please read [data/README.md](data/README.md).
+
+## Scripts ([src](src/))
 
 - Clean the data: [clean_data.R](src/clean_data.R)    
 **usage:** `Rscript src/clean_data.R data/mushrooms.csv results/clean_mushrooms.csv`   
@@ -33,5 +35,17 @@ I am using the kaggle's mushrooms dataset (from [here](https://www.kaggle.com/uc
 - Describe the data: [descr_stat.R](src/descr_stat.R)    
 **usage:** `Rscript src/descr_stat.R results/clean_mushrooms.csv`   
 
-- Fit a decision tree on the data: [decision_tree.py](src/decision_tree.py)    
-**usage:** `python src/decision_tree.py results/clean_mushrooms.csv`
+- Fit a decision tree on the data: [decision_tree.R](src/decision_tree.R)    
+**usage:** `Rscript src/decision_tree.R results/clean_mushrooms.csv results/predictions.csv results/tree.png`   
+
+If you want more information about these script, please read [src/README.md](src/README.md).
+
+## Documentation ([doc](doc/))
+
+In this folder, you will find a report summarizing the important results from this project.
+
+## Results ([results](results/))
+
+This folder contains files generated during cleanup and analysis done during the Mushrooms Project. Most of them are displayed in the report.   
+
+If you want more information about these files, please read [results/README.md](results/README.md).

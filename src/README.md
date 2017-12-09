@@ -21,10 +21,10 @@ Last update on 2017-12-09
 
 
 ## Modelling - Decision tree
-Released on 2017-12-07   
+Released on 2017-12-09   
 Last update on 2017-12-09   
 
-[decision_tree.py](decision_tree.py) is a Python script that build a decision tree to the data and produce the associate visualization.   
+[decision_tree.R](decision_tree.R) is a R script that build a decision tree to the data and produce the associate visualization.   
 1. load the data and split it into training and test sets   
 2. build a decision tree fitting the training set   
 3. plot the decision tree and save as png   
