@@ -1,7 +1,7 @@
 # descr_stat.R
 # Maud Boucherit, 2017-12-07
 #
-# This script computes some descriptive statistics and two-dimension plots
+# This script create and save a bar plot by explanatory variable
 #
 # Input: a csv file, the clean data
 #
