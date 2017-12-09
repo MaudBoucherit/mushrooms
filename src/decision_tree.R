@@ -12,7 +12,7 @@
 # Output: a csv file, the error rates
 #         a png file, a visualisation of the tree
 #
-# Usage: python src/decision_tree.py results/clean_mushrooms.csv results/prediction_rate.csv results/tree.png
+# Usage: Rscript src/decision_tree.R results/clean_mushrooms.csv results/predictions.csv results/tree.png
 
 # library
 library(tidyverse)
