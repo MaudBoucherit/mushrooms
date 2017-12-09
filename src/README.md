@@ -4,7 +4,7 @@ This folder contains the scripts for the Mushrooms Project.
 
 ## Clean data
 Released on 2017-12-07   
-Last update on 2017-12-07   
+Last update on 2017-12-08   
 
 [clean_data.R](clean_data.R) is a R script that cleans the data. It mainly changes the levels of the variables (the levels are one letter only in the raw data).  
 
@@ -13,9 +13,9 @@ Last update on 2017-12-07
 
 ## Data description
 Released on 2017-12-07   
-Last update on 2017-12-07   
+Last update on 2017-12-08   
 
-[descr_stat.R](descr_stat.R) is a R script that does some description of the clean data. It computes some descriptive statistics and two-dimension plots.
+[descr_stat.R](descr_stat.R) is a R script that does some description of the clean data. It create and save bar plots, one for each explanatory variable.
 
 **usage:** `Rscript src/descr_stat.R results/clean_mushrooms.csv`
 
