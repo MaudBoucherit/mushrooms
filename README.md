@@ -2,7 +2,8 @@
 This project's goal is to predict rather a mushroom is poisonous, given some information about the mushroom outlook.
 
 Author: Maud Boucherit   
-Released on 2017-11-23    
+Released on 2017-11-23 
+Last update: 2017-12-08
 
 
 During my free time, I enjoy getting lost in the woods. Usually, I can find my way back, but I'm afraid one day I might be lost for good. Identifying non-poisonous mushroom seems like a vital skill. Therefore, can I predict if a mushroom is poisonous based on some of its features?    
@@ -22,16 +23,15 @@ I am using the kaggle's mushrooms dataset (from [here](https://www.kaggle.com/uc
 - gill-size,  
 - gill-color,  
 - stalk-color,  
-- spore-print-color,  
-- habitat.  
+- spore-print-color.
 
 ## Scripts
 
-- Clean the data: [clean_data.R](clean_data.R)    
+- Clean the data: [clean_data.R](src/clean_data.R)    
 **usage:** `Rscript src/clean_data.R data/mushrooms.csv results/clean_mushrooms.csv`   
 
-- Describe the data: [descr_stat.R](descr_stat.R)    
+- Describe the data: [descr_stat.R](src/descr_stat.R)    
 **usage:** `Rscript src/descr_stat.R results/clean_mushrooms.csv`   
 
-- Fit a decision tree on the data: [decision_tree.py](decision_tree.py)    
+- Fit a decision tree on the data: [decision_tree.py](src/decision_tree.py)    
 **usage:** `python src/decision_tree.py results/clean_mushrooms.csv`
