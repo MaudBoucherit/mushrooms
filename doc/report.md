@@ -76,5 +76,9 @@ This decision tree was then tested with the remaining samples. The predicted val
 
 
 ```
-## Error: '../results/predictions.csv' does not exist in current working directory ('C:/Users/Maud/Documents/UBC - MDS/block3_522_Workflows/mushrooms').
+## # A tibble: 2 x 4
+##      X1          count pred.poisonous pred.edible
+##   <int>          <chr>          <int>       <int>
+## 1     1 real.poisonous            761           0
+## 2     2    real.edible              9         857
 ```

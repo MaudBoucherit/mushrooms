@@ -78,5 +78,5 @@ This decision tree was then tested with the remaining samples. The predicted val
 
 ```{r, message=FALSE, warning=FALSE}
 library(readr)
-(predictions <- read_csv("../results/predictions.csv"))
+(predictions <- read_csv("results/predictions.csv"))
 ```
