@@ -63,9 +63,9 @@ main <- function(){
   # save prediction
   y_pred <- predict(tree, test, type = "class")
   
-  pred_rate <- data.frame('count' = c('pred.poisonous', 'pred.edible'),
-                          'real.poisonous' = c(sum(y_pred[test$class == 1] == 1), sum(y_pred[test$class == 1] == 0)),
-                          'real.edible' = c(sum(y_pred[test$class == 0] == 1), sum(y_pred[test$class == 0] == 0)))
+  pred_rate <- data.frame('count' = c('real.poisonous', 'real.edible'),
+                          'pred.poisonous' = c(sum(y_pred[test$class == 1] == 1), sum(y_pred[test$class == 1] == 0)),
+                          'pred.edible' = c(sum(y_pred[test$class == 0] == 1), sum(y_pred[test$class == 0] == 0)))
   write.csv(pred_rate, file = out_pred)
 }
 
