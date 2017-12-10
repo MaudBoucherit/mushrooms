@@ -31,3 +31,13 @@ Last update on 2017-12-09
 4. calculate prediction rates and save as csv   
 
 **usage:** `Rscript src/decision_tree.R results/clean_mushrooms.csv results/predictions.csv results/tree.png`
+
+
+## Report
+Released on 2017-12-10   
+Last update on 2017-12-10   
+
+[report.Rmd](report.Rmd) is a R Markdown document containing all the results obtained during this project. It first displays plots to describe the data, then some information about the decision tree we built.   
+
+**usage:** `Rscript -e 'ezknitr::ezknit("src/report.Rmd", out_dir = "doc")'
+`
