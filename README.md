@@ -10,6 +10,12 @@ During my free time, I enjoy getting lost in the woods. Usually, I can find my w
 
 I will build a decision tree. I want to minimalize the false negative (i.e. minimalize saying a mushroom is not poisonous when it is) so the probability of getting a false negative will be my main score function.
 
+## Run this project
+
+To run this project, you have to clone it, then run the run_all.sh on a bash shell:
+```bash
+bash run_all.sh
+```
 
 ## Data ([data](data/))
 
@@ -38,11 +44,14 @@ If you want more information about the raw data, please read [data/README.md](da
 - Fit a decision tree on the data: [decision_tree.R](src/decision_tree.R)    
 **usage:** `Rscript src/decision_tree.R results/clean_mushrooms.csv results/predictions.csv results/tree.png`   
 
+- Build a report: [report.Rmd](report.Rmd)    
+**usage:** `Rscript -e 'ezknitr::ezknit("src/report.Rmd", out_dir = "doc")'`   
+
 If you want more information about these script, please read [src/README.md](src/README.md).
 
 ## Documentation ([doc](doc/))
 
-In this folder, you will find a report summarizing the important results from this project.
+In this folder, you can find a report summarizing the important results from this project.
 
 ## Results ([results](results/))
 
