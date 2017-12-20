@@ -3,7 +3,7 @@
 #
 # Runs a Docker Container
 #
-# usage: docker run --rm -it -v /YOUR-REPO/mushrooms:/home/mushrooms mushrooms /bin/bash
+# usage: docker run --rm -it -v /YOUR-REPO/mushrooms:/home/mushrooms rocker/tidyverse
 
 # Using tidyverse Rocker image as a base
 FROM rocker/tidyverse

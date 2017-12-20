@@ -19,6 +19,13 @@ I am first looking at the distribution of poisonous mushrooms for each feature. 
 
 To run this project, you have to clone it, then run the Makefile on a bash shell:
 ```bash
+git clone https://github.com/MaudBoucherit/mushrooms.git
+
+docker pull maudulo/mushrooms
+docker run -it --rm -v YOUR_LOCAL_DIRECTORY_OF_CLONED_REPO/:home/mushrooms maudulo/mushrooms make -C '/home/mushrooms'
+
+cd home/mushrooms/
+make clean
 make all
 ```
 
