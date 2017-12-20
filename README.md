@@ -17,9 +17,9 @@ I am first looking at the distribution of poisonous mushrooms for each feature. 
 
 ## Run this project
 
-To run this project, you have to clone it, then run the run_all.sh on a bash shell:
+To run this project, you have to clone it, then run the Makefile on a bash shell:
 ```bash
-bash run_all.sh
+make all
 ```
 
 ## Data ([data](data/))

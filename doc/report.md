@@ -79,6 +79,6 @@ This decision tree was then tested with the remaining samples. The predicted val
 ## # A tibble: 2 x 4
 ##      X1          count pred.poisonous pred.edible
 ##   <int>          <chr>          <int>       <int>
-## 1     1 real.poisonous            761           0
-## 2     2    real.edible              9         857
+## 1     1 real.poisonous            801           0
+## 2     2    real.edible              3         877
 ```
