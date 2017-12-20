@@ -8,7 +8,12 @@ Last update: 2017-12-09
 
 During my free time, I enjoy getting lost in the woods. Usually, I can find my way back, but I'm afraid one day I might be lost for good. Identifying non-poisonous mushroom seems like a vital skill. Therefore, can I predict if a mushroom is poisonous based on some of its features?    
 
-I will build a decision tree. I want to minimalize the false negative (i.e. minimalize saying a mushroom is not poisonous when it is) so the probability of getting a false negative will be my main score function.
+I am first looking at the distribution of poisonous mushrooms for each feature. Then I am building a decision tree.   
+1. I decided to select only features which humans can easily characterise, like its odour, its shapes, or its colours.   
+2. The data is split randomly between training and test sets, with approximately 80% of the data for training.   
+3. I am using the R package `rpart` to fit the decision tree on the training set and then create a plot of the selected stumps.   
+4. Now, all I need is to follow the decision tree in order to decide whether I can eat a mushroom!
+
 
 ## Run this project
 
