@@ -17,19 +17,23 @@ I am first looking at the distribution of poisonous mushrooms for each feature. 
 
 ## Run this project
 
-To run this project, you have to clone it, then run the Makefile on a bash shell:
+To run this project, you have to clone it, then run the Docker container and the Makefile on a bash shell:
 ```bash
 git clone https://github.com/MaudBoucherit/mushrooms.git
 
 docker pull maudulo/mushrooms
-docker run -it --rm -v YOUR_LOCAL_DIRECTORY_OF_CLONED_REPO/:home/mushrooms maudulo/mushrooms make -C '/home/mushrooms'
+docker run -it --rm -v YOUR_LOCAL_DIRECTORY_OF_CLONED_REPO/:home/mushrooms maudulo/mushrooms /bin/bash
 
 cd home/mushrooms/
 make clean
 make all
 ```
 
-## Data ([data](data/))
+## Organisation
+
+![](Makefile.png)  
+
+### Data ([data](data/))
 
 Stored [here](data/mushrooms.csv), added on 2017-11-23   
 
@@ -45,7 +49,7 @@ I am using the kaggle's mushrooms dataset (from [here](https://www.kaggle.com/uc
 
 If you want more information about the raw data, please read [data/README.md](data/README.md).
 
-## Scripts ([src](src/))
+### Scripts ([src](src/))
 
 - Clean the data: [clean_data.R](src/clean_data.R)    
 **usage:** `Rscript src/clean_data.R data/mushrooms.csv results/clean_mushrooms.csv`   
@@ -61,11 +65,11 @@ If you want more information about the raw data, please read [data/README.md](da
 
 If you want more information about these script, please read [src/README.md](src/README.md).
 
-## Documentation ([doc](doc/))
+### Documentation ([doc](doc/))
 
 In this folder, you can find a report summarizing the important results from this project.
 
-## Results ([results](results/))
+### Results ([results](results/))
 
 This folder contains files generated during cleanup and analysis done during the Mushrooms Project. Most of them are displayed in the report.   
 

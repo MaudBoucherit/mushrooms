@@ -1,0 +1,22 @@
+digraph G {
+n2[label="all", color="red"];
+n9[label="data/mushrooms.csv", color="green"];
+n3[label="doc/report.md", color="red"];
+n7[label="results/clean_mushrooms.csv", color="green"];
+n5[label="results/figures", color="green"];
+n10[label="results/tree", color="red"];
+n8[label="src/clean_data.R", color="green"];
+n11[label="src/decision_tree.R", color="green"];
+n6[label="src/descr_stat.R", color="green"];
+n4[label="src/report.Rmd", color="green"];
+n3 -> n2 ; 
+n5 -> n3 ; 
+n10 -> n3 ; 
+n4 -> n3 ; 
+n9 -> n7 ; 
+n8 -> n7 ; 
+n7 -> n5 ; 
+n6 -> n5 ; 
+n7 -> n10 ; 
+n11 -> n10 ; 
+}
