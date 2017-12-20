@@ -3,7 +3,7 @@
 #
 # Runs a Docker Container
 #
-# usage: docker build --tag mushrooms
+# usage: docker run --rm -it -v /YOUR-REPO/mushrooms:/home/mushrooms mushrooms /bin/bash
 
 # Using tidyverse Rocker image as a base
 FROM rocker/tidyverse
