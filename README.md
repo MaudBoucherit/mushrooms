@@ -1,10 +1,14 @@
 # Mushrooms Project
 This project's goal is to predict rather a mushroom is poisonous, given some information about the mushroom outlook.
 
-Author: Maud Boucherit   
-Released on 2017-11-23   
-Last update: 2017-12-09
+Maud Boucherit   
+December 2017
 
+[![R Version](https://img.shields.io/badge/R%20Version-%3E%3D%203.4-blue.svg)](https://cran.r-project.org/) 
+[![License](https://img.shields.io/badge/license-MIT-orange.svg)](LICENSE.md) 
+[![Reproducible](https://img.shields.io/badge/Reproducible-Makefile-brightgreen.svg)](Makefile)
+
+## Overview
 
 During my free time, I enjoy getting lost in the woods. Usually, I can find my way back, but I'm afraid one day I might be lost for good. Identifying non-poisonous mushroom seems like a vital skill. Therefore, can I predict if a mushroom is poisonous based on some of its features?    
 
@@ -14,17 +18,21 @@ I am first looking at the distribution of poisonous mushrooms for each feature. 
 3. I am using the R package `rpart` to fit the decision tree on the training set and then create a plot of the selected stumps.   
 4. Now, all I need is to follow the decision tree in order to decide whether I can eat a mushroom!
 
+## Dependencies
+- `tidyverse`,
+- `readr`,
+- `rpart` (and `rpart.plot`),
+- `rattle`,
+- `RColorBrewer`.
 
 ## Run this project
 
-To run this project, you have to clone it, then run the Docker container and the Makefile on a bash shell:
+To run this project, you have to clone it, then run the Makefile commands on a bash shell:
 ```bash
 git clone https://github.com/MaudBoucherit/mushrooms.git
 
-docker pull maudulo/mushrooms
-docker run -it --rm -v YOUR_LOCAL_DIRECTORY_OF_CLONED_REPO/:home/mushrooms maudulo/mushrooms /bin/bash
+cd mushrooms/
 
-cd home/mushrooms/
 make clean
 make all
 ```
@@ -65,7 +73,7 @@ If you want more information about the raw data, please read [data/README.md](da
 
 If you want more information about these script, please read [src/README.md](src/README.md).
 
-### Documentation ([doc](doc/))
+### Report ([doc](doc/))
 
 In this folder, you can find a report summarizing the important results from this project.
 
