@@ -1,12 +1,25 @@
-# Mushrooms Project
-This project's goal is to predict rather a mushroom is poisonous, given some information about the mushroom outlook.
+<h1 align="center">
+  <br>
 
-Maud Boucherit   
-December 2017
+![](data/mushroom.png)
 
+Mushrooms Project
+<br>
+</h1>
+
+<h5 align="center"><a>
+Created by Maud Boucherit
+</a></h5>
+
+<h4 align="center"><a>
 [![R Version](https://img.shields.io/badge/R%20Version-%3E%3D%203.4-blue.svg)](https://cran.r-project.org/) 
 [![License](https://img.shields.io/badge/license-MIT-orange.svg)](LICENSE.md) 
 [![Reproducible](https://img.shields.io/badge/Reproducible-Makefile-brightgreen.svg)](Makefile)
+</a></h4>
+
+<h1></h1>
+
+This project's goal is to predict rather a mushroom is poisonous, given some information about the mushroom outlook.
 
 ## Overview
 
