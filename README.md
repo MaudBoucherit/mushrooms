@@ -14,7 +14,7 @@ Created by Maud Boucherit
 <h4 align="center"><a>
 
 [![R Version](https://img.shields.io/badge/R%20Version-%3E%3D%203.4-ff0000.svg)](https://cran.r-project.org/) 
-[![License](https://img.shields.io/badge/license-MIT-ffe066.svg)](LICENSE.md) 
+[![License](https://img.shields.io/badge/License-MIT-ffd633.svg)](LICENSE.md) 
 [![Reproducible](https://img.shields.io/badge/Reproductibility-Makefile-00b33c.svg)](Makefile)
 
 </a></h4>
