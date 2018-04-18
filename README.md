@@ -1,7 +1,7 @@
 <h1 align="center">
   <br>
 
-![](data/mushroom.png)
+![](data/mushrooms.png)
 
 Mushrooms Project
 <br>
@@ -12,9 +12,11 @@ Created by Maud Boucherit
 </a></h5>
 
 <h4 align="center"><a>
+
 [![R Version](https://img.shields.io/badge/R%20Version-%3E%3D%203.4-blue.svg)](https://cran.r-project.org/) 
 [![License](https://img.shields.io/badge/license-MIT-orange.svg)](LICENSE.md) 
 [![Reproducible](https://img.shields.io/badge/Reproducible-Makefile-brightgreen.svg)](Makefile)
+
 </a></h4>
 
 <h1></h1>
