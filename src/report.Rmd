@@ -76,7 +76,7 @@ I build a decision tree fitting approximately 80% of the data.
 
 This decision tree was then tested with the remaining samples. The predicted values are distributed like this:
 
-```{r, message=FALSE, warning=FALSE}
+```{r, message=FALSE, warning=FALSE, echo=FALSE}
 library(readr)
 (predictions <- read_csv("results/predictions.csv"))
 ```
